@@ -1,0 +1,221 @@
+@media (max-width: 1399px) {
+  .call_token {
+    gap: 20px;
+  }
+
+  .token_registraion {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header_right {
+    gap: 6px;
+  }
+
+  .header_right .language_search {
+    gap: 5px;
+  }
+
+  .header_right_TR .token_registraion {
+    gap: 6px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .registration_btn {
+    width: 155px;
+  }
+
+  .token_btn button {
+    width: 155px;
+  }
+
+  .call {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .header_right .language_search {
+    display: none;
+  }
+
+  canvas#productionChart {
+    width: 400px !important;
+    max-width: 100%;
+    height: 300px !important;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  canvas#transactionChart {
+    width: 400px !important;
+    max-width: 100%;
+    height: 300px !important;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  .content_left {
+    order: 2;
+  }
+
+  .content_right {
+    order: 1;
+  }
+
+  .call {
+    display: none;
+  }
+
+  .token_btn button {
+    width: 130px;
+  }
+
+  .registration_btn {
+    width: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_right_TR .token_registraion {
+    flex-direction: row;
+  }
+
+  .token_registraion {
+    flex-direction: column;
+  }
+
+  .registration_btn {
+    width: 155px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .token_btn button {
+    width: 155px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 708px) {
+  .header_right_TR .token_registraion .registration_btn {
+    width: 150px;
+  }
+
+  .header_right_TR .token_registraion .token_btn button {
+    width: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcrumb_title h2 {
+    font-size: 20px;
+    width: 383px;
+  }
+
+  .header_right_TR .token_registraion .registration_btn {
+    width: 160px;
+  }
+
+  .header_right_TR .token_registraion .token_btn button {
+    width: 160px;
+  }
+
+  .header_right {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .logo_image {
+    text-align: center;
+  }
+
+  .content_title {
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .logo_button {
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+  }
+
+  .home_button {
+    display: none;
+  }
+
+  .search_box {
+    display: none;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .language_search .menu_bar {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .language_search {
+    justify-content: center;
+  }
+
+  .menu_button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width:552px) {
+  .vaccine_table table tbody tr td {
+    font-size: 14px;
+  }
+
+  .vaccine_table table thead tr th {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 445px) {
+  .breadcrumb_title h2 {
+    font-size: 17px;
+    width: 330px;
+  }
+
+  .guide_pic p {
+    font-size: 13px;
+  }
+
+  .guide_pic .dhoirgo {
+    width: 49%;
+  }
+
+  .guide_pic .ber {
+    width: 49%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .header_right_TR .token_registraion .registration_btn {
+    width: 140px;
+  }
+
+  .header_right_TR .token_registraion .token_btn button {
+    width: 140px;
+  }
+
+  .token_registration_wrap span {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {}
