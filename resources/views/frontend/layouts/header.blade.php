@@ -7,13 +7,20 @@
     <title>Livestock Farm</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href={{asset("asset/assets/img/logo.jpg")}}>
-    <link rel="icon" href={{asset("asset/assets/img/logo.jpg")}}>
-    <link rel="stylesheet" href= {{asset("asset/assets/css/bootstrap.min.css")}}>
-    <link rel="stylesheet" href={{asset("asset/assets/css/fontawesome_all.min.css")}}/>
-    <link rel="stylesheet" href= {{asset("asset/assets/css/ma5-menu.min.css")}}>
-    <link rel="stylesheet" href={{asset("asset/assets/css/style.css")}}>
-    <link rel="stylesheet" href={{asset("asset/assets/css/responsive.css")}}>
+
+    <link rel="apple-touch-icon" href="{{asset("asset/assets/img/logo.jpg")}}">
+    <link rel="icon" href="{{asset("asset/assets/img/logo.jpg")}}">
+
+    <link rel="stylesheet" href= "{{asset("asset/assets/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{asset("asset/assets/css/fontawesome_all.min.css")}}"/>
+    <link rel="stylesheet" href= "{{asset("asset/assets/css/ma5-menu.min.css")}}">
+    <link rel="stylesheet" href= "{{asset("asset/assets/css/ma5-menu.css")}}">
+    <link rel="stylesheet" href="{{asset("asset/assets/css/sweetalert2.min.css")}}">
+    <link rel="stylesheet" href="{{asset("asset/assets/css/khamarguru.com_css_style.css")}}">
+    <link rel="stylesheet" href="{{asset("asset/assets/css/normalize.css")}}">
+    <link rel="stylesheet" href="{{asset("asset/assets/css/style.css")}}">
+    <link rel="stylesheet" href="{{asset("asset/assets/css/responsive.css")}}">
+
 
 </head>
 <body>
@@ -52,7 +59,7 @@
 
                             </select>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -79,12 +86,12 @@
                         <div class="call_token">
                             <div class="call">
                                 <p>হট লাইনঃ</p>
-                                <span><img src="assets/img/ca.png" alt="">১৬১৪২</span>
+                                <span><img src="{{asset("asset/assets/img/ca.png")}}" alt="">১৬১৪২</span>
                             </div>
                             <div class="token_registration_wrap">
                                 <div class="token_registraion">
                                     <div class="registration_btn">
-                                        <a href="{{url('/registration')}}">নিবন্ধন করুন</a>
+                                        <a href="{{route('register')}}" >নিবন্ধন করুন</a>
                                     </div>
                                     <div class="token_btn">
                                         <button class="token" type="button" data-bs-toggle="modal"
@@ -122,7 +129,7 @@
                                                                         for="animal">প্রাণীঃ</label>
                                                                     <select class="form-select form-select-animal"
                                                                         aria-label=".form-select-animal">
-                                                                        <option value="cow" selected>গবাদি পশু
+                                                                        <option value="cow" selected>গরু
                                                                         </option>
                                                                         <option value="buffalo">মহিষ</option>
                                                                         <option value="goat">ছাগল</option>
@@ -146,6 +153,31 @@
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
+                                                                <label class="form-check-label" for="bdaymonth">প্রাণীর
+                                                                    বয়স ( মাস ও বছর )
+                                                                </label>
+                                                                <input type="date" class="form-control" id="bdaymonth"
+                                                                    name="bdaymonth">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="form-check-label"
+                                                                    for="animal_number">প্রাণীর
+                                                                    সংখ্যা
+                                                                </label>
+                                                                <input id="animal_number" name="animal_number"
+                                                                    placeholder="আপনার প্রাণীর সংখ্যা লিখুন"
+                                                                    class="form-control" type="number" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="form-check-label"
+                                                                    for="animal_weight">প্রাণীর
+                                                                    ওজন
+                                                                </label>
+                                                                <input id="animal_weight" name="animal_weight"
+                                                                    placeholder="আপনার প্রাণীর ওজন (কেজিতে) লিখুন"
+                                                                    class="form-control" type="number" required>
+                                                            </div>
+                                                            <div class="form-group">
                                                                 <div class="form-check mb-3">
                                                                     <label class="form-check-label"
                                                                         for="animal">সেবাসমূহঃ</label>
@@ -165,6 +197,146 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
+
+                                                            <div class="form-group">
+                                                                <div class="checkbox-container">
+                                                                    <label for="options" class="form-check-label"
+                                                                        onmouseenter="showOptions()">রোগের
+                                                                        লক্ষণ</label>
+                                                                    <div id="options" class="options-checkboxes"
+                                                                        onmouseleave="hideOptions()">
+                                                                        <label><input type="checkbox" value="অরুচি"
+                                                                                selected>অরুচি</label>
+                                                                        <label><input type="checkbox" value="জ্বর">
+                                                                            জ্বর</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ব্যাথা">ব্যাথা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ফোলা">ফোলা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="লালাভ">লালাভ</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ক্ষুধা মন্দা">ক্ষুধা
+                                                                            মন্দা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পাতলা পায়খানা">পাতলা
+                                                                            পায়খানা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পানি শুন্যতা">পানি
+                                                                            শুন্যতা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="দূর্বলতা">দূর্বলতা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ঝিমুনি">ঝিমুনি</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="একপার্শে শুয়ে থাকা"> একপার্শে
+                                                                            শুয়ে থাকা
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="শক্ত পায়খানা"> শক্ত
+                                                                            পায়খানা</label>
+                                                                        <label><input type="checkbox" value="পেট ফাঁপা">
+                                                                            পেট ফাঁপা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value=" খুঁড়িয়ে চলা"> খুঁড়িয়ে
+                                                                            চলা</label>
+                                                                        <label><input type="checkbox" value=" লালা ঝরা">
+                                                                            লালা ঝরা</label>
+                                                                        <label><input type="checkbox" value="চোখ লালাভ">
+                                                                            চোখ লালাভ</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="চোখ দিয়ে পানি পড়া"> চোখ দিয়ে
+                                                                            পানি পড়া
+                                                                        </label>
+                                                                        <label><input type="checkbox" value="হাঁচি">
+                                                                            হাঁচি</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ঘড়ঘড় শব্দ করা"> ঘড়ঘড় শব্দ করা
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="রক্ত পড়া">রক্ত পড়া </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="গরম না হওয়া">গরম না
+                                                                            হওয়া</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="মাথা কাঁপানো">মাথা
+                                                                            কাঁপানো</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ঘাড় বাঁকা">ঘাড় বাঁকা </label>
+                                                                        <label><input type="checkbox" value="আঘাত"> আঘাত
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পুড়ে যাওয়া"> পুড়ে
+                                                                            যাওয়া</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="কেটে যাওয়া"> কেটে যাওয়া</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ছিলে যাওয়া"> ছিলে যাওয়া
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ঘা">ঘা</label>
+                                                                        <label><input type="checkbox" value="ক্ষত">ক্ষত
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ভেঙ্গে যাওয়া">ভেঙ্গে
+                                                                            যাওয়া</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পায়ের পাতা ফোলা">পায়ের পাতা
+                                                                            ফোলা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পাখা ছেড়ে দেয়া">পাখা ছেড়ে
+                                                                            দেয়া</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="মলদ্বার ঝুলে থাকা">মলদ্বার ঝুলে
+                                                                            থাকা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ভ্যাজাইনা ঝুলে থাকা">ভ্যাজাইনা
+                                                                            ঝুলে থাকা
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="জরায়ু ঝুলে থাকা">জরায়ু ঝুলে
+                                                                            থাকা
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="শ্বাসকষ্ট">শ্বাসকষ্ট </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পেট ফাঁপা">পেট ফাঁপা </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="কাশি">কাশি</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="সর্দি">সর্দি</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ফোঁড়া ওঠা">ফোঁড়া ওঠা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="বিষ খাওয়া">বিষ খাওয়া </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="খাবার ওগলানো">খাবার
+                                                                            ওগলানো</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="বমি করা">বমি করা</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ঘন ঘন প্রস্রাব">ঘন ঘন প্রস্রাব
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="প্রসাব বন্ধ">প্রসাব বন্ধ</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="পায়খানা বন্ধ"> পায়খানা বন্ধ
+                                                                        </label>
+                                                                        <label><input type="checkbox"
+                                                                                value="দুধ বন্ধ">দুধ বন্ধ</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="ডিম কমে যাওয়া"> ডিম কমে
+                                                                            যাওয়া</label>
+                                                                        <label><input type="checkbox"
+                                                                                value="শুকিয়ে যাওয়া"> শুকিয়ে যাওয়া
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="selected-options" id="selected-options">
+                                                                        <!-- Selected options will be displayed here -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
                                                             <div class="bill">
                                                                 <p class="payment">পরিশোধ করুনঃ</p>
                                                                 <div class="amount"></div>

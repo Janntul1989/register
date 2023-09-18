@@ -220,6 +220,108 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="accordion-item disease_list_single">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                            aria-expanded="false" aria-controls="flush-collapseSix">
+                                            <img src="{{asset("asset/assets/img/cat.png")}}" alt="">বিড়াল
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse disease_list"
+                                        aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">রানীক্ষেত বা ঝিমানো রোগ</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">ইনক্লুশন বডি হেপাটাইটিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কলেরা</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">বসন্ত বা পক্স রোগ</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">সালমোনেলোসিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">এসপারজিলোসিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">রক্ত আমাশয় বা রক্ত পায়খানা</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কবুতরের ক্যাংকার রোগের</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কবুতরের ঠান্ডা জনিত রোগ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item disease_list_single">
+                                    <h2 class="accordion-header" id="flush-headingSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                            aria-expanded="false" aria-controls="flush-collapseSeven">
+                                            <img src="{{asset("asset/assets/img/dog.png")}}" alt="">কুকুর
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse disease_list"
+                                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">রানীক্ষেত বা ঝিমানো রোগ</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">ইনক্লুশন বডি হেপাটাইটিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কলেরা</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">বসন্ত বা পক্স রোগ</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">সালমোনেলোসিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">এসপারজিলোসিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">রক্ত আমাশয় বা রক্ত পায়খানা</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কবুতরের ক্যাংকার রোগের</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কবুতরের ঠান্ডা জনিত রোগ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item disease_list_single">
+                                    <h2 class="accordion-header" id="flush-headingEight">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                            aria-expanded="false" aria-controls="flush-collapseEight">
+                                            <img src="{{asset("asset/assets/img/rabbit.png")}}" alt="">খরগোশ
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseEight" class="accordion-collapse collapse disease_list"
+                                        aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">রানীক্ষেত বা ঝিমানো রোগ</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">ইনক্লুশন বডি হেপাটাইটিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কলেরা</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">বসন্ত বা পক্স রোগ</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">সালমোনেলোসিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">এসপারজিলোসিস</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">রক্ত আমাশয় বা রক্ত পায়খানা</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কবুতরের ক্যাংকার রোগের</a></li>
+                                                <li><a href="{{url('/disease')}}"><img src="{{asset("asset/assets/img/right-arrow.png")}}"
+                                                            alt="">কবুতরের ঠান্ডা জনিত রোগ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

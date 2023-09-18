@@ -53,7 +53,8 @@
                                 <input class="form-check-input" type="radio" name="animalBirdFarm" id="animal" checked>
                                 <label class="form-check-label" for="animal">পশু</label>
                                 <select class="form-select form-select-animal" aria-label=".form-select-animal">
-                                    <option value="cow" selected>গবাদি পশু</option>
+                                    <option value="" selected>নির্বাচন করুন</option>
+                                    <option value="cow" >গরু</option>
                                     <option value="buffalo">মহিষ</option>
                                     <option value="goat">ছাগল</option>
                                     <option value="sheep">ভেড়া</option>
@@ -69,6 +70,7 @@
                                 <label class="form-check-label" for="bird">
                                     পাখি</label>
                                 <select class="form-select form-select-bird" aria-label=".form-select-bird">
+                                    <option value="" selected>নির্বাচন করুন</option>
                                     <option value="hen" selected>দেশী মুরগি</option>
                                     <option value="duck">হাঁস</option>
                                     <option value="broiler">ব্রয়লার</option>
@@ -78,7 +80,7 @@
                                     <option value="dove">ঘুঘু</option>
                                     <option value="bajrigar">বার্জারগার</option>
                                     <option value="parrot">তোতাপাখি</option>
-                                   <option value="no">নাই</option>
+
                                 </select>
                             </div>
                         </div>
@@ -95,50 +97,10 @@
                                      <option value="no">নাই</option>
                                 </select>
                             </div>
-                            <div class="licence">
-                                <label class="control-label" for="licence">লাইসেন্স নাম্বার</label>
-                                <input id="licence" name="licence" class="form-control" type="number"
-                                    placeholder="খামারের লাইসেন্স নাম্বার দিন">
-                                <span>যদি থাকে...</span>
-                            </div>
+                          
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">শর্তাবলীতে সম্মত হন</label>
-                                <div class="invalid-feedback">জমা দেওয়ার আগে আপনাকে অবশ্যই একমত হতে হবে। </div>
-                            </div>
-                        </div>
+                        <button type="submit" class="btn submit_btn">জমা দিন</button>
 
-                    </fieldset>
-                    <button type="submit" class="btn">জমা দিন</button>
-                </form>
-            </div>
-            <!-- footer top -->
-            <div class="row footer_top pt-5">
-                <div class="col-12">
-                    <img src="{{asset("asset/assets/img/footer_top_bg.png")}}" alt="">
+                    </form>
                 </div>
-            </div>
-            <div class="row footer_bottom">
-                <div class="col-12 text-center">
-                    <p>I-Smart Livestock Services (OS-LS) © 2023 All rights reserved
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <script src="{{asset('/assetassets/js/jquery-3.6.1.min.js')}}"></script>
-    <script src="{{asset('asset/assets/js/modernizr-3.11.2.min.js')}}"></script>
-    <script src="{{asset('asset/assets/js/popper.min.js')}}"></script>
-    <script src="{{asset('asset/assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('asset/assets/js/ma5-menu.min.js')}}"></script>
-    <script src="{{asset('asset/https://cdn.jsdelivr.net/npm/chart.js')}}"></script>
-    <script src="{{asset('asset/assets/js/plugins.js')}}"></script>
-    <script src="{{asset('asset/assets/js/jquery.countTo.js')}}"></script>
-    <script src="{{asset('asset/assets/js/main.js')}}"></script>
-
-</body>
-
-</html>
